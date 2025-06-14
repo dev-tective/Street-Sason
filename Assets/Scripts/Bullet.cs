@@ -3,9 +3,12 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     private PlayerScore ownerScore;
+    private AudioSource boingAudio;
     
     private void Start()
     {
+        boingAudio = GetComponent<AudioSource>();
+        boingAudio.Play();  
         Destroy(gameObject, 8f);
     }
     // ReSharper disable Unity.PerformanceAnalysis

@@ -2,6 +2,16 @@ using UnityEngine;
 
 public class Client : Person
 {
+    private AudioSource sound;
+
+    private void Awake()
+    {
+        sound = GetComponent<AudioSource>();
+        if (sound == null)
+        {
+            Debug.LogError("No AudioSource assigned: agrega sonido OE BASURA");
+        }
+    }
     private void Update()
     {
         transform.Translate(Vector2.right * (velocity * Time.deltaTime));
@@ -11,7 +21,9 @@ public class Client : Person
     {
         if (collision.CompareTag("Bullet"))
         {
-            velocity *= 10;
+            velocity *= 5;
+            sound.Play();
+            //falta agregar un sonido
         }
     }
 
