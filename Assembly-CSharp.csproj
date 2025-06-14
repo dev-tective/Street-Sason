@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\Sereno.cs" />
     <Compile Include="Assets\Scripts\Client.cs" />
+    <Compile Include="Assets\Scripts\Person.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\TowerRotation.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />

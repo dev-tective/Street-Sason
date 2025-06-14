@@ -1,7 +1,12 @@
 using UnityEngine;
 
-public class Client : Person
+public class Sereno : Person
 {
+    private void Start()
+    {
+        Invoke(nameof(DestroyAndRespawn), 10f);
+    }
+
     private void Update()
     {
         transform.Translate(Vector2.right * (velocity * Time.deltaTime));
@@ -11,13 +16,8 @@ public class Client : Person
     {
         if (collision.CompareTag("Bullet"))
         {
-            velocity *= 10;
+            velocity *= -2;
         }
-    }
-
-    private void OnBecameInvisible()
-    {
-        Invoke(nameof(DestroyAndRespawn), 0.5f);
     }
 
     private void DestroyAndRespawn()

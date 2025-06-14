@@ -19,7 +19,7 @@ public class GameController : MonoBehaviour
         var camWidth = camHeight * cam.aspect;
 
         // Margen para no pegarlos al borde exacto
-        const float margin = 1f;
+        const float margin = 1.5f;
 
         // Posiciones base
         var camPos = cam.transform.position;
