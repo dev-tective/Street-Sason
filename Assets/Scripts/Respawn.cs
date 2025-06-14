@@ -10,7 +10,6 @@ public class Respawn : MonoBehaviour
     private void Start()
     {
         Invoke(nameof(RespawnClient), 0.8f);
-        RespawnClient();
     }
 
     public void RespawnClient()

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d8d2754e9c2faea4ca594f275baa21aa
+guid: 1bcb48704eb8adf4eb5a575e1175d76e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4702316398365548131
-    second: carretilla_anticuchos_0
+      213: -7445865899928270237
+    second: llama_win_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: carretilla_anticuchos_0
+      name: llama_win_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 13
-        width: 1949
-        height: 2367
+        x: 167
+        y: 6
+        width: 387
+        height: 688
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d916ded46240ebeb0800000000000000
-      internalID: -4702316398365548131
+      spriteID: 36ac495f968faa890800000000000000
+      internalID: -7445865899928270237
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      carretilla_anticuchos_0: -4702316398365548131
+      llama_win_0: -7445865899928270237
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
