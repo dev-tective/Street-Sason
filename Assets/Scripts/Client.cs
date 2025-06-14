@@ -2,6 +2,15 @@ using UnityEngine;
 
 public class Client : Person
 {
+    private float velocity;
+    private Respawn respawn;
+    private AudioSource fuimmSound;
+
+    private void Start()
+    {
+        fuimmSound = gameObject.GetComponent<AudioSource>();
+    }
+
     private void Update()
     {
         transform.Translate(Vector2.right * (velocity * Time.deltaTime));
@@ -12,6 +21,7 @@ public class Client : Person
         if (collision.CompareTag("Bullet"))
         {
             velocity *= 10;
+            fuimmSound.Play();
         }
     }
 
