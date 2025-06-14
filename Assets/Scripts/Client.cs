@@ -4,6 +4,12 @@ public class Client : MonoBehaviour
 {
     private float velocity;
     private Respawn respawn;
+    private AudioSource fuimmSound;
+
+    private void Start()
+    {
+        fuimmSound = gameObject.GetComponent<AudioSource>();
+    }
 
     private void Update()
     {
@@ -25,6 +31,7 @@ public class Client : MonoBehaviour
         if (collision.CompareTag("Bullet"))
         {
             velocity *= 10;
+            fuimmSound.Play();
         }
     }
 
